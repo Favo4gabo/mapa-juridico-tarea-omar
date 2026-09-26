@@ -1,11 +1,12 @@
 :root {
-    --bg-color: #f8fafc;
-    --text-color: #0f172a;
-    --primary-blue: #1e3a8a;
-    --accent-blue: #3b82f6;
-    --card-bg: #ffffff;
-    --border-color: #e2e8f0;
-    --code-bg: #f1f5f9;
+    --bg-color: #111214;
+    --text-color: #f1f0e8;
+    --primary-yellow: #d6b34a;
+    --accent-yellow: #c99e2e;
+    --card-bg: #1b1c1f;
+    --border-color: #3a3c40;
+    --code-bg: #24262a;
+    --soft-yellow-bg: #323438;
 }
 
 * {
@@ -29,7 +30,7 @@ body {
 
 /* HERO */
 .hero {
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    background: linear-gradient(135deg, #17181b 0%, #292b2f 100%);
     color: #ffffff;
     padding: 60px 0;
     text-align: center;
@@ -75,7 +76,7 @@ body {
 
 .card-section h2 {
     font-size: 1.6rem;
-    color: var(--primary-blue);
+    color: var(--primary-yellow);
     margin-bottom: 15px;
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 10px;
@@ -83,7 +84,7 @@ body {
 
 .section-intro {
     margin-bottom: 20px;
-    color: #475569;
+    color: #c1c0b5;
 }
 
 /* GRIDS */
@@ -95,7 +96,7 @@ body {
 }
 
 .info-box, .finding-box, .ref-box {
-    background: #f8fafc;
+    background: var(--soft-yellow-bg);
     border: 1px solid var(--border-color);
     padding: 20px;
     border-radius: 8px;
@@ -103,13 +104,13 @@ body {
 
 .info-box h3, .finding-box h3, .ref-box h3 {
     font-size: 1.1rem;
-    color: var(--primary-blue);
+    color: var(--primary-yellow);
     margin-bottom: 10px;
 }
 
 /* STRATEGY CARDS */
 .strategy-card {
-    background: #f8fafc;
+    background: var(--soft-yellow-bg);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 20px;
@@ -124,8 +125,8 @@ body {
     padding: 10px;
     border-radius: 6px;
     font-size: 0.85rem;
-    color: #0f172a;
-    border: 1px solid #cbd5e1;
+    color: #f1e5ba;
+    border: 1px solid #4a4c50;
     margin: 10px 0;
     word-break: break-all;
 }
@@ -133,7 +134,7 @@ body {
 .img-preview-container {
     width: 100%;
     height: 140px;
-    background: #e2e8f0;
+    background: #292b2f;
     border-radius: 6px;
     overflow: hidden;
     margin: 10px 0;
@@ -152,8 +153,8 @@ body {
 }
 
 .btn-modal-trigger {
-    background-color: var(--accent-blue);
-    color: white;
+    background-color: var(--accent-yellow);
+    color: #17160f;
     border: none;
     padding: 8px 12px;
     border-radius: 4px;
@@ -165,26 +166,26 @@ body {
 }
 
 .btn-modal-trigger:hover {
-    background-color: #2563eb;
+    background-color: #e0b640;
 }
 
 .observation {
     font-size: 0.9rem;
-    color: #334155;
+    color: #d1cdbd;
     margin-top: 10px;
 }
 
 /* VIGENCIA & ROUTE */
 .vigencia-box, .route-box {
-    background: #f1f5f9;
-    border-left: 4px solid var(--primary-blue);
+    background: #27292d;
+    border-left: 4px solid var(--primary-yellow);
     padding: 20px;
     border-radius: 0 8px 8px 0;
     margin-top: 25px;
 }
 
 .vigencia-box h3, .route-box h3 {
-    color: var(--primary-blue);
+    color: var(--primary-yellow);
     margin-bottom: 10px;
 }
 
@@ -205,7 +206,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    background: #fdfdfd;
+    background: var(--card-bg);
 }
 
 .semaforo-card.green { border-left: 6px solid #22c55e; }
@@ -222,9 +223,9 @@ body {
     text-transform: uppercase;
 }
 
-.badge-green { background-color: #dcfce7; color: #166534; }
-.badge-yellow { background-color: #fef9c3; color: #854d0e; }
-.badge-red { background-color: #fee2e2; color: #991b1b; }
+.badge-green { background-color: #183326; color: #a7e5ba; }
+.badge-yellow { background-color: #393725; color: #f2d77a; }
+.badge-red { background-color: #3b2221; color: #f2aaa5; }
 
 .semaforo-card h3 {
     font-size: 1.1rem;
@@ -235,15 +236,15 @@ body {
 .route-box {
     text-align: center;
     font-weight: 500;
-    background: #e0f2fe;
-    border-left-color: #0284c7;
+    background: #323438;
+    border-left-color: var(--accent-yellow);
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 40px 0;
-    color: #64748b;
+    color: #aaa99e;
     font-size: 0.9rem;
     border-top: 1px solid var(--border-color);
     margin-top: 40px;
